@@ -1,13 +1,17 @@
-## Hexo S3 deploy script
+## Hexo Deploy S3 Script
 
-As used by the Meteor guide.
+Easily deploy static Hexo site to AWS S3. Uses environment variables or a
+`keys.json` file with configuration. The script runs independent of Hexo, but
+it uses the Hexo for generating the static site and looking up som
+configurations.
+Originally forked from 'meteor/hexo-s3-deploy'
 
 ### Install
 
 ```bash
-$ npm install --save-dev hexo-s3-deploy
+$ npm install --save-dev hexo-deploy-s3
 # or
-$ yarn add hexo-s3-deploy --dev
+$ yarn add hexo-deploy-s3 --dev
 ```
 
 ### Add a command
@@ -16,7 +20,7 @@ $ yarn add hexo-s3-deploy --dev
 
 ```
 "scripts": {
-  "deploy": "hexo-s3-deploy"
+  "deploy": "hexo-deploy-s3"
 }
 ```
 
@@ -48,3 +52,4 @@ Then:
   # or...
   $ yarn deploy
 ```
+

@@ -1,23 +1,23 @@
 {
-  "name": "hexo-s3-deploy",
-  "version": "1.2.1",
-  "description": "Simple script to deploy a hexo site to s3, with support for versioning",
+  "name": "hexo-deploy-s3",
+  "version": "1.0.1",
+  "description": "Simple script to deploy a hexo site to s3, uses environment variables or falls back to JSON configuration with a keys.json file in your hexo project root folder.",
   "bin": {
-    "hexo-s3-deploy": "index.js"
+    "hexo-deploy-s3": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meteor/hexo-s3-deploy.git"
+    "url": "git+https://github.com/meteor/hexo-deploy-s3.git"
   },
-  "author": "Evan You, Tom Coleman",
+  "author": "Michael Rosata, Evan You, Tom Coleman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/meteor/hexo-s3-deploy/issues"
+    "url": "https://github.com/mrosata/hexo-deploy-s3/issues"
   },
-  "homepage": "https://github.com/meteor/hexo-s3-deploy#readme",
+  "homepage": "https://github.com/mrosata/hexo-deploy-s3#readme",
   "dependencies": {
     "readdirp": "^2.0.0",
     "s3-sync": "^1.0.1",
